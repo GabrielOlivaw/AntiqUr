@@ -111,7 +111,7 @@ def move(dice_count, is_computer):
     print("Number of kill moves: " + str(len(kill_moves)))
 
     if is_computer:
-        # Implementation of the computer AI.
+        # Implementation of the computer AI. Choose a random move between the list of possible moves.
         if len(not_colliding_moves) > 0 and len(kill_moves) > 0:
             rnd_not_colliding = randint(0, len(not_colliding_moves) - 1)
             rnd_kill = randint(0, len(kill_moves) - 1)
